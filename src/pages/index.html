@@ -1,153 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <title>Real Madryt</title>
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="navigation">
+      <nav class="hamburger">
+        <a class="hamburger__page hamburger__page--index" href="/html/index.html"
+          >Skład Realu</a
+        >
+        <a class="hamburger__page hamburger__page--form" href="/html/form.html"
+          >Kwestionariusz</a
+        >
+      </nav>
+    </header>
+    <main class="all-page">
+      <header class="header">
+        <h1 class="header__title">Real Madryt</h1>
+        <p class="header__test">
+          Elo <span class="special special-js"></span> jaka fajna stronica :)
+        </p>
+      </header>
+      <section class="squad">
+        <h2 class="squad__function">Skład Realu Madryt</h2>
+        <article class="sector">
+          <h3 class="sector__position">Bramkarz</h3>
+          <div class="sector__formation">
+            <div class="sector__card">
+              <p class="sector__card--player">Thibaut Courtois</p>
+              <img
+                class="sector__card--face"
+                src="/images/Courtois.jpeg"
+                alt="Thibaut Courtois"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="sector">
+          <h3 class="sector__position">Obrońcy</h3>
+          <div class="sector__formation">
+            <div class="sector__card">
+              <p class="sector__card--player">Dani Carvajal</p>
+              <img
+                class="sector__card--face"
+                src="/images/Carvajal.jpeg"
+                alt="Dani Carvajal"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">Eder Militao</p>
+              <img
+                class="sector__card--face"
+                src="/images/Militao.jpeg"
+                alt="Eder Militao"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">David Alaba</p>
+              <img
+                class="sector__card--face"
+                src="/images/Alaba.jpeg"
+                alt="David Alaba"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">Ferland Mendy</p>
+              <img
+                class="sector__card--face"
+                src="/images/Mendy.jpeg"
+                alt="Ferland Mendy"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="sector">
+          <h3 class="sector__position">Pomocnicy</h3>
+          <div class="sector__formation">
+            <div class="sector__card">
+              <p class="sector__card--player">Casemiro</p>
+              <img
+                class="sector__card--face"
+                src="/images/Casemiro.jpeg"
+                alt="Casemiro"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">Toni Kroos</p>
+              <img
+                class="sector__card--face"
+                src="/images/Kroos.jpeg"
+                alt="Toni Kroos"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">Luka Modric</p>
+              <img
+                class="sector__card--face"
+                src="/images/Modric.jpeg"
+                alt="Luka Modric"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="sector">
+          <h3 class="sector__position">Napastnicy</h3>
+          <div class="sector__formation">
+            <div class="sector__card">
+              <p class="sector__card--player">Rodrygo</p>
+              <img
+                class="sector__card--face"
+                src="/images/Rodrygo.jpeg"
+                alt="Rodrygo"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--captain">Karim Benzema</p>
+              <img
+                class="sector__card--face"
+                src="/images/Benzema.jpeg"
+                alt="Karim Benzema"
+              />
+            </div>
+            <div class="sector__card">
+              <p class="sector__card--player">Vinicius Jr.</p>
+              <img
+                class="sector__card--face"
+                src="/images/Vini.jpeg"
+                alt="Vinicius Junior"
+              />
+            </div>
+          </div>
+        </article>
+        <div class="button">
+          <button class="button__tap button__tap-js">zmień zawodnika</button>
+        </div>
+      </section>
+      <section class="coach">
+        <h2 class="coach__function">Trener</h2>
+        <div class="coach__carleto">
+          <p class="coach__caeleto--text coach__carleto--text-js"></p>
+          <p class="coach__carleto--player">Carlo Ancelotti</p>
+          <img
+            class="coach__carleto--face"
+            src="/images/f7c1d8f8-bda6-417d-bb62-5a498568df99.jpeg"
+            alt="Carlo Ancelotti"
+          />
+        </div>
+      </section>
+      <footer class="floor">Tomcio uczy się frontendu.</footer>
+    </main>
+    <script src="/main.js" type="module"></script>
   </body>
 </html>
