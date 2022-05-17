@@ -7,7 +7,7 @@ module.exports = {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
     main: "./src/js/main.js",
-    form: "./sec/js/form.js",
+    form: "./src/js/form.js",
   },
   output: {
     filename: "[name].[hash:8].js",
