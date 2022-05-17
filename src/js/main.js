@@ -1,3 +1,5 @@
+import '../scss/style.scss';
+
 console.log("Hello Tomcio");
 
 const coachText = document.querySelector(".coach__carleto--text-js");
