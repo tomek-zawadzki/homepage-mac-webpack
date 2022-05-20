@@ -1,4 +1,4 @@
-import '../scss/modules/style.scss';
+import '../scss/main.scss';
 
 console.log("Hello Tomcio");
 
