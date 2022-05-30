@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 console.log("Hello Tomcio");
 
@@ -40,14 +40,19 @@ switch (myNumber) {
   case 102:
     console.log("okk");
     break;
-    default:
-        console.log('okkk')
+  default:
+    console.log("okkk");
 }
 
-const button = document.querySelector('.button__tap-js');
+const button = document.querySelector(".button__tap-js");
 
+button.addEventListener("click", () => {
+  button.innerHTML = "udało Ci się byku";
+});
 
+const hamburger = document.querySelector(".top-button--js");
 
-button.addEventListener('click', () => {
-  button.innerHTML = 'udało Ci się byku'
-})
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".hamburger--js");
+  nav.classList.toggle("hamburger--open");
+});

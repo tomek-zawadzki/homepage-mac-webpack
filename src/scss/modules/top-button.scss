@@ -1,13 +1,14 @@
-
+.top-button {
+  position: absolute;
+  font-size: xx-large;
+  height: 48px;
+  width: 48px;
+  right: 12px;
+  top: 12px;
+}
 
 @media (min-width: 768px) {
-    .top-button {
-        position: absolute;
-        font-size: xx-large;
-        height: 48px;
-        width: 48px;
-        right: 12px;
-        top: 12px;
-    }
-  
+  .top-button {
+    display: none;
+  }
 }
