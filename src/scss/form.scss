@@ -1,6 +1,15 @@
 @import "modules/hamburger.scss";
 @import "modules/top-button.scss";
 
+:root {
+  --text-color: white;
+  --background-color: rgb(7, 7, 122);
+  --header-color: black;
+}
+
+body {
+  background-color: var(--text-color);
+}
 
 .form {
   display: grid;
@@ -10,8 +19,8 @@
   margin: 50px;
   margin-top: 10px;
   padding: 30px;
-  background-color: rgb(7, 7, 122);
-  color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-radius: 16px;
 }
 
@@ -19,12 +28,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--header-color);
   &__title {
     margin-bottom: 2px;
   }
   &__date {
     margin-top: 2px;
   }
+}
+
+.switch {
+  display: flex;
+  margin-left: 100px;
 }
 
 .position {
