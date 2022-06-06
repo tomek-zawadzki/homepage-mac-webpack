@@ -21,12 +21,13 @@ button.addEventListener("click", () => {
     document.documentElement.style.setProperty("--text-color", "white");
     document.documentElement.style.setProperty("--background-color", "rgb(7, 7, 122)");
     document.documentElement.style.setProperty("--header-color", "black");
+    button.innerHTML = "DARK MODE";
     isDark = false;
   } else {
     document.documentElement.style.setProperty("--text-color", "rgb(7, 7, 122)");
     document.documentElement.style.setProperty("--background-color", "white");
     document.documentElement.style.setProperty("--header-color", "white");
-
+    button.innerHTML = "LIGHT MODE";
     isDark = true;
   }
 });
